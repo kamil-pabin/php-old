@@ -1,0 +1,100 @@
+.navbar{
+  max-height:100vw;
+}
+
+
+
+@media (min-width: 1079px) 
+{ 
+  .navbar{
+    width:3vw;
+    height:5vh;
+    background: #00000000;
+    transition:linear 0.5s;
+    align-items: center;
+  }
+  .navbar .collapse{
+    opacity:0;
+    transition:linear 0.2s;
+  }
+  .navbar .navbar-brand2{
+    opacity:1;
+    transition:linear 0.3s;
+  }
+  .navbar .navbar-brand{
+    opacity:0;
+    transition:linear 0.3s;
+  }
+  .navbar:hover .navbar-brand2{
+    opacity:0;
+    transition:linear 0.1s;
+  }
+  .navbar:hover .navbar-brand{
+    opacity:1;
+    transition:linear 0.5s;
+  }
+  .navbar:hover{
+    background: #00000025;
+    width:100vw;
+    height:5vh;
+    transition:linear 0.4s;
+  }
+  
+  .navbar:hover .collapse{
+    opacity:1;
+    transition:linear 0.3s;
+  }
+
+  .show {
+    max-height:50vh;
+  }
+  .dropdown-menu{
+    background:#00000013;
+    margin-top:0.2vw;
+    border-top-right-radius: 0%;
+    border-top-left-radius: 0%;
+  }
+
+
+}
+
+@media (max-width: 1079px) 
+{ 
+  .navbar ul{
+    margin-top:1vw;
+    left:0;
+    bottom:0;
+    text-align:center;
+    font-size:4vw;
+    background:#00000040;
+  }
+  
+  .navbar .navbar-brand{
+    text-align:left;
+  }
+  .navbar .navbar-brand2{
+    display:none;
+    opacity:0;
+    text-align:left;
+    transition:linear 0.3s;
+  }
+  .navbar-nav .dropdown-menu{
+    transition:linear 0.3s;
+  }
+  .dropdown-menu{
+      margin-top:1vw;  
+      background:#00000000;
+      text-align:center;
+      transition:linear 0.3s;
+    }
+  .dropdown-menu a
+  {     
+    transition:linear 0.3s;
+    text-align:center;
+    color:#f1f1f1;     
+  }
+    
+}
+
+
+

@@ -1,0 +1,187 @@
+@keyframes strzalka1 {
+    from {top: 90%;}
+    to {top:94%;}
+}
+@keyframes strzalka {
+    from {top: 50%;}
+    to {top:68%;}
+}
+body
+{
+    z-index: 0;
+    font-family: 'Neucha', cursive;
+    background: rgb(1, 2, 3);
+    overflow-x: hidden;
+    margin:0;
+    padding:0;
+    justify-content:center;
+    align-items: center;
+}
+svg
+{
+    width:100%;
+}
+html 
+{
+    scroll-behavior: smooth;
+}
+.container-fluid{
+    margin:0;
+    padding:0;
+}
+.rowprop{
+    width:100vw;
+    height:100vh;
+    padding:0;
+    margin:0;
+    align-content: center;
+}
+.colprop{
+    padding:0;
+    margin:0;
+    height:100vh;
+    max-height:100vh;
+}
+.opinietekstt{
+    position:absolute;
+    text-align:center;
+    color:white;
+    width:100vw;
+    font-size:6vh;
+    margin-top:1vh;
+    z-index: 2;
+}
+.phonepng{
+    position: absolute;
+    z-index: 2;
+    
+    max-height:10vh;
+}
+
+.opinie{
+    left:12.5vw;
+    top:10vh;
+    width:75vw;
+    height:80vh;
+    line-height:25vw;
+    max-width:100vw;
+    max-height:80vh;
+    position: absolute;
+    object-fit:cover;
+}
+.main .bgimage{
+    filter: blur(0.4vw);
+}
+.mainimgprop{
+    display:inline-block;
+    object-fit:fill;
+    max-width:100vw;
+    width:100vw;
+    max-height:100vh;
+    height:100vh;
+    
+
+}
+.rowprop:hover .arrowprop{
+    opacity:1;
+    
+
+}
+
+
+.arrowprop{
+    object-fit:cover;
+    position: absolute;
+    width: 100%;
+    height: 8vh ;
+    color: #f1f1f1;
+    transition: .5s ease;
+    transition: opacity 1.5s;
+    animation-name: strzalka1;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    opacity:0.7;
+    text-align:center;
+    left:0;
+}
+
+.arrowstyle {
+    transition: opacity 1.5s;
+    width:3vw;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+
+.title {
+    margin: calc(50vh - 40px) auto 0 auto;
+    object-fit:cover;
+    position: absolute;
+    top:7vh;
+    width: 100%;
+    height: 8vh ;
+    font-size: 8vw;
+    font-weight:lighter;
+    color: white;       
+    -moz-transition: opacity 1.5s;
+    -webkit-transition: opacity 1.5s;
+    -o-transition: opacity 1.5s;
+    transition: opacity 1.5s;
+    text-align:center;
+}
+.fadein 
+{
+    opacity: 0;
+    -moz-transition: opacity 1.5s;
+    -webkit-transition: opacity 1.5s;
+    -o-transition: opacity 1.5s;
+    transition: opacity 1.5s;
+}
+
+body.loaded .fadein {
+    opacity: 1;
+}
+
+.karuzela{
+    max-height:100vh;
+    max-width:100vw;
+}
+.karuzela .carousel img{
+    
+    height:100vh;
+    width:100vw;
+    object-fit:cover;
+}
+.middle{
+    align-content: center;
+    text-align: center;
+}
+.karuzela .opiskaruzeli{
+    background: hsl(0, 0%, 5%, 50%);
+    width:100vw;
+    left:0;
+    bottom:10%;
+
+}
+.naglowekkaruzeli{
+    top:5%;
+}
+.colprop .carousel-indicators{
+    top:92%;
+    left:0;
+}
+.carousel-indicators a .arrowprop{
+    object-fit:cover;
+    position: flex;
+    width: 100%;
+    left:0;
+    height: 7vh ;
+    color: #f1f1f1;
+    transition: .5s ease;
+    transition: opacity 1.5s;
+    animation-name: strzalka;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    opacity:1;
+    text-align:center;
+    top:50%;
+}
