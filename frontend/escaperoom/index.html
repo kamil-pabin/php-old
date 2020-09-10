@@ -11,15 +11,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.js"></script>
     
-    
-    <!-- material bootstrap-->
-    
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-    <link rel="stylesheet" href="node_modules/mdbootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="node_modules/mdbootstrap/css/mdb.min.css">
-    <link rel="stylesheet" href="node_modules/mdbootstrap/css/style.css">
-    
+  
     
     <!-- Fonts -->
     
@@ -53,23 +45,33 @@
         }
         var minimenuvar = 0;
         var opiniefocuststatus = 0;
-        function minimenu(){
-            if (minimenuvar==0) {
+        function minimenu()
+        {
+            if (minimenuvar==0) 
+            {
                 document.getElementById('titleid').style.display= 'none';
                 document.getElementById('wyspaopis').style.visibility = 'hidden';
                 document.getElementById('kosmosopis').style.visibility = 'hidden';
                 document.getElementById('cmentarzopis').style.visibility = 'hidden';
+                document.getElementById('opiniemenu').style.visibility = 'hidden';
+                document.getElementById('rezerwacjemenu').style.visibility = 'hidden';
+                document.getElementById('phones').style.visibility = 'hidden';
                 minimenuvar = 1; 
             }          
-            else{ 
+            else
+            { 
                 document.getElementById('titleid').style.display= 'block';
                 document.getElementById('wyspaopis').style.visibility = 'visible';
                 document.getElementById('kosmosopis').style.visibility = 'visible';
                 document.getElementById('cmentarzopis').style.visibility = 'visible';
+                document.getElementById('opiniemenu').style.visibility = 'visible';
+                document.getElementById('rezerwacjemenu').style.visibility = 'visible';
+                document.getElementById('phones').style.visibility = 'visible';
                 minimenuvar = 0;
             }
         }
-        function opiniefocus(){
+        function opiniefocus()
+        {
             if (opiniefocuststatus==0) {
                 document.getElementById('mainimageopinie').style.filter = "brightness(50%)";     
                 opiniefocuststatus = 1; 
@@ -78,6 +80,17 @@
                 document.getElementById('mainimageopinie').style.filter = "brightness(100%)";  
                 opiniefocuststatus = 0;
             }
+        }
+
+        function phoneshow()
+        {
+            document.getElementById('phonepngsmall').style.display='none';   
+            document.getElementById('phonepng').style.left='1vw';  
+        }
+        function phonehide()
+        {
+            document.getElementById('phonepngsmall').style.display='block';   
+            document.getElementById('phonepng').style.left='-50vw';  
         }
         
     </script>
@@ -260,17 +273,25 @@
             <div class="opinietekstt" id="opinietekst" >
                 <p>Opinie</p>
             </div>
-            <div class="phonepng" style="top:50vh; left:1vw;">
-                <p style="font-weight: bold; transform: rotate(-20deg); color:#dbdbdb;">Masz pytania?</p>
-                <img src="pics/phone.png" height="80vh"  style="padding-left:1vw;" >
-                <p style="font-weight: bold; transform: rotate(-20deg);color:#dbdbdb;padding-top:1vh;">Zadzwoń: 123 456 987</p>
+            <div id="phones">
+                <div class="phonepngsmall" id="phonepngsmall" style="top:50vh; left:1vw;" onmouseover="phoneshow()">
+                    <img src="pics/phone.png" height="40vh"  style="padding-left:0vw;" >
+                </div>
+
+
+                <div class="phonepng" id="phonepng" style="top:50vh; left:-50vw;"  >
+                    <p style="font-weight: bold; transform: rotate(-20deg); color:#dbdbdb;">Masz pytania?</p>
+                    <img src="pics/phone.png" height="80vh"  style="padding-left:1vw;" >
+                    <p style="font-weight: bold; transform: rotate(-20deg);color:#dbdbdb;padding-top:1vh;">Zadzwoń: 123 456 987</p>
+                </div>
             </div>
+
             <div class="bgimage" id='mainimageopinie'>
                 <img src="pics/bg.jpg" class="img-fluid mainimgprop" style="position: sticky; filter:blur(1vh)">                           
             </div>
 
 
-            <div class="opinie" onmouseover="opiniefocus()" onmouseout="opiniefocus()">             
+            <div class="opinie" id="opiniemenu" onmouseover="opiniefocus()" onmouseout="opiniefocus()">             
                     <script type="text/javascript">
                         window.handleIFrameMessage = function(e){ if(e.data.height && e.data.id){ const el = document.getElementById(e.data.id);if(el)  } };
                         window.addEventListener("message", handleIFrameMessage, false);
@@ -291,17 +312,22 @@
     <div class="row rowprop" id="rezerwacje">
 
         <div class="col colprop">
+            <div class="opinietekstt" id="opinietekst" >
+                <p>Rezerwacja</p>
+            </div>
             
+            <div class="rezerwacje" id="rezerwacjemenu">
+
+                <script type="text/javascript">
+                    window.handleIFrameMessage = function(e){ if(e.data.height && e.data.id){ const el = document.getElementById(e.data.id);if(el) el.style.height = e.data.height+"px"; } };
+                    window.addEventListener("rezerwacje", handleIFrameMessage, false);
+                </script>
+                <iframe id="iframe_calendar_5b3cd1a96a0a46937173fd8e0382c4b2_93" src="https://widget.lock.me/pl/calendar/5b3cd1a96a0a46937173fd8e0382c4b2_93.html?chooser=1" border="0" width="100%" height="100%" style="border:none;"></iframe>    
+
+            </div>
             
 
-
             
-
-            <a href="#rezerwacje">
-                <div class="arrowprop" >                      
-                    <img src="pics/arrow.png" class="arrowstyle">                 
-                </div>
-            </a>
 
         </div>
     </div>
@@ -322,18 +348,22 @@
       
 
 
-<script src="js/navbar.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.js"></script>
     <script type="text/javascript" src="node_modules/mdbootstrap/js/jquery.min.js"></script>
     <script type="text/javascript" src="node_modules/mdbootstrap/js/popper.min.js"></script>
     <script type="text/javascript" src="node_modules/mdbootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="node_modules/mdbootstrap/js/mdb.min.js"></script>
-</body>
-<script>
-   
-</script>
-<footer>
+
+    </body>
+
+    <script>
     
-</footer>
+    </script>
+
+    <footer>
+        
+    </footer>
+
 </html>

@@ -54,11 +54,21 @@ html
 .phonepng{
     position: absolute;
     z-index: 2;
-    
+    transition: .2s ease;
+    height:10vh;
     max-height:10vh;
+}
+.phonepngsmall{
+    position: absolute;
+    z-index: 2; 
+    max-height:3vh;
+    height:3vh;
+    transition: .2s ease;
 }
 
 .opinie{
+    transition: .5s ease;
+    transition: opacity 1.5s;
     left:12.5vw;
     top:10vh;
     width:75vw;
@@ -68,6 +78,23 @@ html
     max-height:80vh;
     position: absolute;
     object-fit:cover;
+}
+
+.rezerwacje{
+    transition: .5s ease;
+    transition: opacity 1.5s;
+    left:12.5vw;
+    top:10vh;
+    width:75vw;
+    height:80vh;
+    line-height:25vw;
+    max-width:100vw;
+    max-height:80vh;
+    position: absolute;
+    object-fit:cover;
+}
+#rezerwacje{
+    background:lightslategray;
 }
 .main .bgimage{
     filter: blur(0.4vw);
