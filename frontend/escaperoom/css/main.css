@@ -82,7 +82,7 @@ html
 
 .rezerwacje{
     transition: .5s ease;
-    transition: opacity 1.5s;
+    transition: opacity 2.8s;
     left:12.5vw;
     top:10vh;
     width:75vw;
@@ -98,10 +98,11 @@ html
 }
 .main .bgimage{
     filter: blur(0.4vw);
+    object-fit:cover;
 }
 .mainimgprop{
     display:inline-block;
-    object-fit:fill;
+    object-fit:cover;
     max-width:100vw;
     width:100vw;
     max-height:100vh;
@@ -115,6 +116,9 @@ html
 
 }
 
+#opiniezdj{
+    filter: blur(0);
+}
 
 .arrowprop{
     object-fit:cover;

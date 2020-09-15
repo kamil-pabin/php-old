@@ -49,7 +49,7 @@
     max-height:50vh;
   }
   .dropdown-menu{
-    background:#00000013;
+    background:#00000088;
     margin-top:0.2vw;
     border-top-right-radius: 0%;
     border-top-left-radius: 0%;
@@ -60,14 +60,20 @@
 
 @media (max-width: 1079px) 
 { 
+ 
   .navbar ul{
+    padding-top:20vh;
+    height:100vh;
     margin-top:1vw;
     left:0;
     bottom:0;
     text-align:center;
     font-size:4vw;
     background:#09090999;
+    
   }
+  
+  
   
   .navbar .navbar-brand{
     text-align:left;
@@ -86,12 +92,13 @@
       background:#00000000;
       text-align:center;
       transition:linear 0.3s;
+      
     }
   .dropdown-menu a
   {     
     transition:linear 0.3s;
     text-align:center;
-    color:#f1f1f1;     
+    color:#f1f1f1;   
   }
     
 }
