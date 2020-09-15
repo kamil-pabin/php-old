@@ -29,6 +29,11 @@ html
     margin:0;
     padding:0;
 }
+.proponas{
+    font-family: 'Bebas Neue', cursive;
+    background: rgb(255,130,130);
+    background: linear-gradient(90deg, rgba(255,130,130,1) 0%, rgba(255,107,107,1) 69%, rgba(255,110,110,1) 100%);
+}
 .rowprop{
     width:100vw;
     height:100vh;
@@ -106,14 +111,83 @@ html
     max-width:100vw;
     width:100vw;
     max-height:100vh;
-    height:100vh;
-    
-
+    height:100vh;   
 }
+.odnosnik{
+ color:white;
+}
+.odnosnik:hover{
+    color:white;
+   }
 .rowprop:hover .arrowprop{
     opacity:1;
     
 
+}
+@media (min-width: 1080px) 
+{ 
+    .zakladki{
+        position:absolute; 
+        top:3vw;
+        width:90vw; 
+        height:80vh; 
+        left:5vw;
+        font-size:3.5vh;  
+        color:white
+    }
+    .zakladkiswitch a{
+        color:white;
+        font-size:2.5vh
+    }
+    .listazalet{
+        padding-left: 37vw;  
+        font-size:2.5vh;   
+        list-style: initial;
+    }
+    .mapa{
+        width:45vw;
+        height:60vh
+    }
+    .kontaktyrozne{
+        width:45vw; 
+        height:60vh; 
+        padding-top:1vh; 
+        margin-top:15vh; 
+        margin-left:7vw; 
+        padding-left:1vw;
+    }
+}
+
+@media (max-width: 1079px) 
+{ 
+    .kontaktyrozne{
+        width:90vw;  
+        padding-top:1vh; 
+        margin-top:1vh; 
+        padding-left:1vw;
+    }
+    .mapa{
+        width:90vw;
+        height:60vh
+    }
+    .listazalet{
+        padding-left: 20vw;  
+        font-size:1.5vh;   
+        list-style: initial;
+    }
+    .zakladki{
+        font-size:2vh;
+        position:absolute; 
+        top:3vw;
+        width:90vw; 
+        height:80vh; 
+        left:5vw;
+        color:white
+    }
+    .zakladkiswitch a{
+        color:white;
+        font-size:3vh
+    }
 }
 
 #opiniezdj{
