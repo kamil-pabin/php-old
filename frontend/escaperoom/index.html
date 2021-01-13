@@ -12,9 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.js"></script>
-    
-  
-    
+       
     <!-- Fonts -->
     
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
@@ -27,7 +25,7 @@
 
     <!-- default -->
     <meta charset="utf-8">
-    <title>NoEscape - pokoje zagadek</title>
+    <title>Escape Room - pokoje zagadek</title>
 
 
 
@@ -113,7 +111,7 @@
 
         <!-- Navbar brand -->
         <a class="navbar-brand2" ><span class="navbar-toggler-icon" ></span></a>
-        <a class="navbar-brand" href="#" >NoEscape</a>
+        <a class="navbar-brand" href="#" >Escape Room</a>
         
         <!-- Collapse button -->
         <button class="navbar-toggler" onclick="minimenu()" type="button" data-toggle="collapse" data-target="#basicExampleNav"
@@ -166,7 +164,7 @@
             </div>
             <div class="title" id="titleid">
                 <div class="fadein" style="position:relative;">
-                    NoEscape
+                    Escape Room
                     
                     <p><h4>
                     
@@ -220,7 +218,7 @@
                     <div class="carousel-item active">
                     <img src="pics/island.jpg" class="d-block img-fluid" alt="...">
                     <div class="carousel-caption d-none d-md-block naglowekkaruzeli" id='wyspaopis'>
-                        <h1>Wyspa Rozbitkow</h1>
+                        <h1>Wyspa</h1>
                         </div>
                     <div class="carousel-caption d-none d-md-block opiskaruzeli">
                         <a class="h3 odnosnik" href=#rezerwacje>Rezerwuj teraz!</a>
@@ -231,7 +229,7 @@
                     <div class="carousel-item">
                     <img src="pics/kosmos.jpg" class="d-block img-fluid" alt="...">
                     <div class="carousel-caption d-none d-md-block naglowekkaruzeli" id='kosmosopis'>
-                        <h1>Podbój Kosmosu</h1>                      
+                        <h1>Kosmos</h1>                      
                         </div>
                     <div class="carousel-caption d-none d-md-block opiskaruzeli">
                         <a class="h3 odnosnik" href=#rezerwacje>Rezerwuj teraz!</a>
@@ -242,7 +240,7 @@
                     <div class="carousel-item">
                     <img src="pics/cmentarz.jpg" class="d-block img-fluid" alt="...">
                     <div class="carousel-caption d-none d-md-block naglowekkaruzeli" id='cmentarzopis'>
-                        <h1>Nawiedzony Cmentarz</h1>                            
+                        <h1>Cmentarz</h1>                            
                         </div>
                     <div class="carousel-caption d-none d-md-block opiskaruzeli">
                         <a class="h3 odnosnik" href=#rezerwacje>Rezerwuj teraz!</a>
@@ -294,12 +292,10 @@
 
 
             <div class="opinie" id="opiniemenu" onmouseover="opiniefocus()" onmouseout="opiniefocus()">             
-                    <script type="text/javascript">
-                        window.handleIFrameMessage = function(e){ if(e.data.height && e.data.id){ const el = document.getElementById(e.data.id);if(el)  } };
-                        window.addEventListener("message", handleIFrameMessage, false);
-                    </script>
-                    <iframe id="iframe_comments_5b3cd1a96a0a46937173fd8e0382c4b2" src="https://widget.lock.me/pl/comments/5b3cd1a96a0a46937173fd8e0382c4b2.html" border="0" width="100%" height="100%" style="border:none;"></iframe>
-
+                    <div class="pisemne" style="background-color:white; width:70vw; height:70vh; padding-left:5vw; padding-top:5vh" >
+                        <img src="pics/opinia.png" style="width:30vw;">  
+                        <img src="pics/opinia.png" style="width:30vw;">  
+                    </div>
             </div>
 
             <a href="#rezerwacje">
@@ -324,13 +320,13 @@
             </div>
 
             <div class="rezerwacje" id="rezerwacjemenu">
-
-                <script type="text/javascript">
-                    window.handleIFrameMessage = function(e){ if(e.data.height && e.data.id){ const el = document.getElementById(e.data.id);if(el) el.style.height = e.data.height+"px"; } };
-                    window.addEventListener("rezerwacje", handleIFrameMessage, false);
-                </script>
-                <iframe id="iframe_calendar_5b3cd1a96a0a46937173fd8e0382c4b2_93" src="https://widget.lock.me/pl/calendar/5b3cd1a96a0a46937173fd8e0382c4b2_93.html?chooser=1" border="0" width="100%" height="100%" style="border:none;"></iframe>    
-
+                <div class = "puste" style="width:70vw; height:70vh; background-color:rgba(0, 0, 0, 0.493)">
+                    <div id="reztekst" style="color:white; padding-left:5%; padding-right:5%; text-align: center;">
+                        <p>Aktualnie dostępne są rezerwacje telefoniczne pod numerem telefonu +12 345 67 89 oraz bezpośrednio na miejscu</p>
+                    </div>
+                    
+                </div>
+                
             </div>
             
             <a href="#onas">
@@ -355,8 +351,8 @@
                         <p class="text-center" style="font-size:10vh">O nas</p> 
 
                         <p class="text-center" style="margin-top:5vh; " >
-                            NoEscape to wyjątkowy obiekt umożliwiający zabawe w tak zwanych 'Escape Roomach', 
-                            w których gracze w grupach od 2 do 5 osób, są zamykani na okrągłą godzinę w pokoju z zagadkami.
+                            Escape room to wyjątkowy obiekt umożliwiający zabawe w pokojach zagadek, 
+                            w których gracze w grupach od 2 do 5 osób, są zamykani na okrągłą godzinę.
                             Ich celem jest rozwiązanie wszystkich, poznanie historii danego pokoju i w końcu wydostanie się z pokoju samodzielnie
                             <br><u>Dlaczego warto wybrac się do Escape Roomu?</u>
                         </p>
@@ -393,49 +389,42 @@
                         </p>
                         <div class="overflow-auto p-3 mb-3 mb-md-0 mr-md-3 " style="max-width: 90vw; left:0vw; max-height: 40vh;">                  
                             <p style="margin-top:1vh;" >
-                                <p id="regulamin" class="">
-                                    
-I. PRZEDMIOT REGULAMINU 
-<br>&nbsp&nbsp    1. Niniejszy regulamin określa zasady korzystania z usług Tomasz Młyński No Escape (dalej zwany No Escape) z siedzibą przy ul. Politechnicznej 3/4 , 80-238 Gdańsk, NIP 589 194 44 48, Regon 222163836, a usługobiorcą (dalej zwany „Graczem”)
-<br>&nbsp&nbsp    2. Biuro obsługi klienta: No Escape zlokalizowane przy ul. Politechnicznej 3/4 , 80-238 Gdańsk
-<br>&nbsp&nbsp    3. Strona internetowa (dalej zwaną „Witryną”) to www.noescape.pl
-<br>&nbsp&nbsp    4. Każdy Gracz jest zobowiązany do zapoznania się z treścią niniejszego Regulaminu przed rezerwacją za pośrednictwem Witryny.
-<br>&nbsp&nbsp    5. Gracz zobowiązany jest do korzystania z Witryny oraz rezerwacji w sposób zgodny z Regulaminem oraz przepisami obowiązującego prawa.
-<br>II. ZASADY OGÓLNE
-<br>&nbsp&nbsp 1. Każdy przystępuje i uczestniczy w grze na własną odpowiedzialność.
-<br>&nbsp&nbsp 2. Osoby poniżej 16 roku życia zobowiązane są do przystąpienia do gry z przynajmniej jedną osobą pełnoletnią.
-<br>&nbsp&nbsp 3. Zakazuję się z korzystania z usług NO ESCAPE pod wpływem alkoholu i innych środków odurzających.
-<br>&nbsp&nbsp 4. Gracze odpowiadają za wyposażenie pokoi w NO ESCAPE.
-<br>&nbsp&nbsp 5. Gra niewskazana osobom cierpiącym na klaustrofobię, epilepsję, w trakcie leczenia psychicznego.
-<br>&nbsp&nbsp 6. Organizator nie ponosi odpowiedzialności za pogorszenia się stanu zdrowia Gracza wynikające z uczestnictwa w Grze mimo wyżej opisanego zakazu
-<br>&nbsp&nbsp 7. W lokalu, w którym przeprowadzana jest gra, obowiązuje zakaz palenia, spożywania alkoholu, środków odurzających oraz innych substancji psychoaktywnych.
-<br>&nbsp&nbsp 8. Zakazuje się wnoszenia jakichkolwiek niebezpiecznych przedmiotów (noży, broni palnej, scyzoryków itp.) do lokalu
-<br>&nbsp&nbsp 9. Obowiązkiem Gracza jest odpowiednie zabezpieczenie wnoszonych rzeczy osobistych. Organizator nie ponosi odpowiedzialności za szkody na mieniu powstałe w wyniku naruszenia ww. postanowienia.
-<br>&nbsp&nbsp 10. Zakazuje się wprowadzania do lokalu zwierząt.
-<br>&nbsp&nbsp 11. Podczas gry nie wolno korzystać z telefonów komórkowych ani innych sprzętów elektronicznych.
-<br>&nbsp&nbsp 12. W przypadku nieprzestrzegania regulaminu obsługa ma prawo poprosić Gracza o opuszczenie pokoju. Graczowi nie przysługuje prawo do zwrotu pieniędzy
-<br>&nbsp&nbsp 13. By skorzystać z usługi, należy pojawić się punktualnie na zarezerwowana godzinę. Osoby, które przyjdą po wyznaczonym czasie nie będą mogły wziąć udziału w rozgrywce.
-<br>&nbsp&nbsp 14. Czas gry to 60 minut. Nie ma możliwości wydłużenia tego czasu.
-<br> III. REZERWACJA
-<br>&nbsp&nbsp 1. Rezerwacja odbywa się za pośrednictwem Witryny noescape.pl. oraz kalendarza rezerwacji na witrynie www.lockme.pl
-<br>&nbsp&nbsp 2. Rezerwację można dokonać także telefonicznie pod numerem telefonu +48 570 902 270
-<br>&nbsp&nbsp 3. Osoba rezerwująca ma obowiązek poinformować o zasadach pozostałe osoby uczestniczące w grze.
-<br>IV. PŁATNOŚĆ
-<br>&nbsp&nbsp 1. Płatność za usługę może być dokonana gotówką w PLN lub voucherem podarunkowym w lokalu.
-<br>&nbsp&nbsp 2. Płatności za grę zarezerwowaną za pośrednictwem strony www.lockme.pl można dokonać wyłącznie za pośrednictwem usługi Przelewy24
-<br>&nbsp&nbsp 3. Dokonanie rezerwacji stanowi zawarcie umowy w myśl przepisów prawa. Organizator zastrzega sobie ograniczenia dotyczące odstąpienia od zawartej umowy w treści: bezpłatne odstąpienie od umowy (anulacja rezerwacji) możliwe jest jedynie w terminie nie przekraczającym 24h do terminu rezerwacji. W innych przypadkach kwota opłaconej rezerwacji nie podlega zwrotowi.
-<br>&nbsp&nbsp 4. W przypadku odwołania rezerwacji, zgodnie z Regulaminem (po dokonaniu płatności), wpłacona kwota zostanie zwrócona w ciągu 7 dni roboczych, w sposób w jaki została wpłacona przez osobę opłacającą.
-<br>&nbsp&nbsp 5. Ceny wskazane na stronach Witryny www.noescape.pl kwotami brutto, zawierającymi podatek VAT obliczony zgodnie z obowiązującymi przepisami.
-
-<br>V. PRZETWARZANIE DANYCH
-
-<br>&nbsp&nbsp 1. Składając zamówienie, rezerwujący świadomie zgadza się na przetwarzanie i wykorzystywanie jego danych osobowych wyłącznie w celu realizacji zamówienia. Brak wyrażenia zgody na przetwarzanie danych osobowych uniemożliwi dokonania rezerwacji
-<br>&nbsp&nbsp 2. Dane te nie są przetwarzane ani wykorzystywane w żadnym innym celu.
-<br>&nbsp&nbsp 3. Administratorem danych Tomasz Młyński No Escape (dalej zwany No Escape) z siedzibą przy ul. Politechnicznej 3/4 , 80-238 Gdańsk, NIP 589 194 44 48, Regon 222163836
-
-<br> VI. POSTANOWIENIA KOŃCOWE
-
-<br>&nbsp&nbsp 1. W zakresie nieuregulowanym w niniejszym Regulaminie zastosowanie mają odpowiednie przepisy Kodeksu cywilnego.
+                                <p id="regulamin" class="">                                  
+                                    1. Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+                                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 
+                                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                     mollit anim id est laborum. </br>
+                                    2. Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+                                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 
+                                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                     mollit anim id est laborum.</br>
+                                    3. Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+                                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 
+                                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                     mollit anim id est laborum.</br>
+                                    4. Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+                                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 
+                                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                     mollit anim id est laborum.</br>
+                                    5. Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+                                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 
+                                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                     mollit anim id est laborum.</br>
                                 </p>
                             </p>
                         </div>
@@ -448,22 +437,22 @@ I. PRZEDMIOT REGULAMINU
                     <div class="row">
                         <div class="col-xl-6 col-sm-12">
                             <div class="mapa" >
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9295.97757389826!2d18.63647!3d54.374749!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd7497527e1d1b%3A0x1c656018190cde91!2sPolitechniczna%203%2C%2080-230%20Gda%C5%84sk!5e0!3m2!1spl!2spl!4v1600194275823!5m2!1spl!2spl" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>            
-                            </div>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1969.3326168802785!2d-118.21603852421867!3d33.889409793567786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2cb3c7509933f%3A0xe6235f4d2f0e7161!2sGrove%20Street!5e0!3m2!1spl!2spl!4v1610546617979!5m2!1spl!2spl" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                </div>
                         </div>                      
                         <div class="col-md-6 col-sm-12">
                             <div class="kontaktyrozne" style='color:white;'>          
                                 <div>
                                     <img src="pics/phone.png" height="40vh" >
-                                    <span style="font-weight:bold;  padding-top:1vh;"> +48 570 902 270</span>   
+                                    <span style="font-weight:bold;  padding-top:1vh;"> +12 345 67 89</span>   
                                 </div>               
                                 <div>
                                     <img src="pics/mail.png" height="40vh" >
-                                    <span style="font-weight: bold; padding-top:1vh;">  gdansk@noescape.pl</span>
+                                    <span style="font-weight: bold; padding-top:1vh;">  twojescaperoom@mail.com</span>
                                 </div>
                                 <div>
                                     <img src="pics/gps.png" height="40vh">
-                                    <span style="font-weight: bold; padding-top:1vh;">  Gdańsk, Politechniczna 3/4</span>
+                                    <span style="font-weight: bold; padding-top:1vh;">  Grove Street - Home, Los Santos, CA</span>
                                 </div>                   
                             </div>
                         </div>
