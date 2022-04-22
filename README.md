@@ -2,4 +2,4 @@
 
 ## In the 'backend' folder, you can see some of my PHP projects.
 
-## In the frontend - another html, js and css website, accessible here https://kamil-pabin.github.io/WebDev/frontend/escaperoom/
+## In the frontend - another html, js and css website, accessible here https://kamil-pabin.github.io/php-old/frontend/escaperoom/
